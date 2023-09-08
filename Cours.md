@@ -8,3 +8,4 @@
 -  ⬅️ ou ➡️ pour corriger dans la ligne
 
 ## 1.2
+La commande qui permet de "voir", ou plus exactement de lister le contenu d'un dossier est la commande `ls`.
