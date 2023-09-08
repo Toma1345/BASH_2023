@@ -18,4 +18,12 @@
 - `cd ..` : permet de remonter dans le dossier parent.
 
 ## 1.3
-- `cat <nom_fichier>` permet de lire le contenu d'un fichier.
+- `cat <addresse_vers_fichier>` permet de lire le contenu d'un fichier.
+- <kbd> Tab </kbd> : autocomplétion du début d'une commande.
+
+## 1.4
+- `ls <nom_dossier>` : permet d'afficher la liste des dossiers et fichiers du dossier nom_dossier.
+- **chemin relatif** `ls <chemin>` ou `cat <chemin>`: est un chemin qui dépend de l'endroit où l'on est.
+- `ls ..` ou aussi `ls ../<chemin>`: permet de lister le contenu du dossier parent.
+
+- **chemin absolu** `ls /<chemin>`: est un chemin qui ne dépend pas de la où je me trouve.
