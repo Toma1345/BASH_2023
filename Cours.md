@@ -1,4 +1,4 @@
-# Cours Système - `BASH`
+# Cours Système n°1 - `BASH`
 
 ## 1.1
 - Ouvrir un terminal <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd>.
@@ -19,7 +19,7 @@
 
 ## 1.3
 - `cat <addresse_vers_fichier>` permet de lire le contenu d'un fichier.
-- <kbd> Tab </kbd> : autocomplétion du début d'une commande.
+- <kbd>Tab</kbd> : autocomplétion du début d'une commande.
 
 ## 1.4
 - `ls <nom_dossier>` : permet d'afficher la liste des dossiers et fichiers du dossier nom_dossier.
