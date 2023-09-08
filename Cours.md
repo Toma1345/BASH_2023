@@ -27,3 +27,14 @@
 - `ls ..` ou aussi `ls ../<chemin>`: permet de lister le contenu du dossier parent.
 
 - **chemin absolu** `ls /<chemin>`: est un chemin qui ne dépend pas de la où je me trouve.
+
+## 1.5
+- le premier mot d'une ligne est une **commande** (= un fichier exécutable).
+- les autres mots sont des arguments.
+- `-v` *par exemple* est une option car il y a un tiret (*convention*).
+- En version longue, il s'écrive avec deux tirets.
+
+  * Les commandes les plus indispensables sont dans le répertoire `/bin/`,
+  * Les commandes accessibles à tous les utilisateurs sont dans le répertoire `/usr/bin/`,
+  * Certaines commandes ne sont accessibles qu'aux administrateurs du système (nous en reparlerons plus tard). Les commandes d'administration sont dans le répertoire `/sbin/`.
+
