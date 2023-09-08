@@ -12,6 +12,7 @@ Un texte en **gras**, en *italique*, en ***gras italique***.
 1. item 1
 2. item 2
 3. item 3
+4. ...
 
 `print('salut')`
 
