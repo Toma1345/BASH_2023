@@ -1,4 +1,4 @@
-# Système - `BASH`
+# Cours Système - `BASH`
 
 ## 1.1
 - Ouvrir un terminal <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd>.
@@ -8,10 +8,14 @@
 -  ⬅️ ou ➡️ pour corriger dans la ligne.
 
 ## 1.2
-### La commande `ls` :
-- La commande qui permet de "voir", ou plus exactement de lister le **contenu** d'un dossier (dans lequel on est) est la commande `ls`.
-### La commande `cd` :
-- La commande `cd` permet de changer de dossier courant.
-- **Revenir en arrière** : utiliser la commande `cd ..` (`..` correspond au **dossier parent**).
-- **Revenir directement à la "maison"** : utiliser la commande `cd` sans arguments.
 
+### La commande `ls` - list :
+- `ls` : permet d'afficher la liste des dossiers et fichiers du dossier actuel
+
+### La commande `cd` - Change Directory :
+- `cd <nom_dossier>` : permet de se déplacer dans un dossier enfant.
+- `cd ` : permet de se déplacer dans son home, repéré par le ~ (<kbd>AltGr</kbd> + <kbd>2</kbd>).
+- `cd ..` : permet de remonter dans le dossier parent.
+
+## 1.3
+- `cat <nom_fichier>` permet de lire le contenu d'un fichier.
