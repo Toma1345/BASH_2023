@@ -1,5 +1,7 @@
 # Cours Système n°1 - `BASH`
 
+*[lien vers le killercoda](https://killercoda.com/emelin)*  
+
 ## 1.1
 - Ouvrir un terminal <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd>.
 - Chemin absolu du home de *john* : `/home/john/`.
