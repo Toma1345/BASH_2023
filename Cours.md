@@ -18,6 +18,7 @@
 - `cd <nom_dossier>` : permet de se déplacer dans un dossier enfant.
 - `cd ` : permet de se déplacer dans son home, repéré par le ~ (<kbd>AltGr</kbd> + <kbd>2</kbd>).
 - `cd ..` : permet de remonter dans le dossier parent.
+- `cd ../../` : permet de remonter dans le dossier grand-parent.
 
 ## 1.3
 - `cat <addresse_vers_fichier>` permet de lire le contenu d'un fichier.
@@ -38,5 +39,10 @@
 
   * Les commandes les plus indispensables sont dans le répertoire `/bin/`,
   * Les commandes accessibles à tous les utilisateurs sont dans le répertoire `/usr/bin/`,
-  * Certaines commandes ne sont accessibles qu'aux administrateurs du système (nous en reparlerons plus tard). Les commandes d'administration sont dans le répertoire `/sbin/`.
-
+  * Certaines commandes ne sont accessibles qu'aux administrateurs du système. Les commandes d'administration sont dans le répertoire `/sbin/`.
+ 
+ ## 1.6
+ - `tree ..` : permet d'afficher l'arborescence du dossier parent.
+ - `tree .` : permet d'afficher l'arborescence du dossier courant.
+ - `~` : représente le dossier mon home.
+ - `cd ~` : emmène directement dans mon home.
