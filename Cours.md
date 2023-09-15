@@ -85,4 +85,22 @@
 ##
 ## Cours n°3 - 15/09/2023
 
-### 3.1
+### 3.1 - Droits des fichiers
+`ls -l` :
+- `-rw-r----- 1 sasha  etu  495 juil. 16 08:52: fichier1.txt`
+  * `fichier1.txt` : nom du fichier
+  * `juil. 16 08:52` : date et heure de la dernière modification du fichier
+  * `495` : taille en octets du fichier
+  * `sasha etu` : le fichier appartient à l'utilisateur *sasha* et est dans le groupe *etu*
+  * `1` : 
+- `-rw-r-----` : 
+  * le premier `-` indique qu'il s'agit d'un **fichier**
+  * `r` (read - droit de lecture) : on peut lire le fichier
+  * `w` (write - droit d'écriture) : on peut modifier le contenu du fichier
+  * `x` (execute - droit d'execution) : on peut executer le fichier
+  * `-` : absence de droit de **lecture**/**écriture**/**execution** (en fonction de la position du caractère `-`)
+  * `r--` : indique les droits des **membres du groupe** (*ici que le droit de lecture*)
+  * les trois derniers `---` indique les droits de tous les **autres utilisateurs**.
+
+  - `cp` : copier un fichier
+  - `grep` : rechercher un mot dans un fichier
