@@ -50,6 +50,7 @@
 ##
 # Cours n°2
 
+- `ls -l` : permet de voir la dernière date de modification d'un fichier
 - `nano <chemin>` : pour éditer un nouveau fichier et ouvre un éditeur de fichier
 - `mkdir <répertoire>` : créer un dossier
 - `mkdir -r <répertoires>` : créer plusieurs dossier grâce à l'option `-r` (`--recursive`)
@@ -61,8 +62,16 @@
 - ⚠️ `rm -r /` : efface tout l'ordinateur
 - `du <chemin vers un dossier>` : permet de connaître la taille d'un répertoire (`du` : *disk usage*)
 - `du -s <dossier>` : fait la somme de l'espace disque utilisé
-- `du -hm <dossier>` : affiche la taille avec une unité plus facile à lire
-- `ls -l` : permet de voir la dernière date de modification d'un fichier
+- `du -h <dossier>` : affiche la taille avec une unité plus facile à lire
+
+## 2.7
+- `ps -o pid` : permet d'afficher les identifiants des processus
+  * PID : l'identifiant du processus (Process ID)
+  * ARGS : la commande qui a été utilisée pour lancer le processus
+  * PPID : l'identifiant du processus parent (Parent Process ID)
+  * UID : l'identifiant de l'utilisateur qui a lancé le processus
+  * TTY : le terminal correspondant au processus
+
 
 
 ### option :
