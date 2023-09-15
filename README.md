@@ -18,5 +18,3 @@ Un texte en **gras**, en *italique*, en ***gras italique***.
 
 [lien vers le killercoda](https://killercoda.com/emelin)  
 bonjour
-
-## 15 septembre 2023 - Suite Killercoda
