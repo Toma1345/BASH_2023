@@ -1,37 +1,40 @@
-# Cours Système n°1 - `BASH`
+# Cours Système - `BASH`
 
 *[lien vers le killercoda](https://killercoda.com/emelin)*  
+  
+##
+## Cours n°1 - 08/09/2023
 
-## 1.1
+### 1.1
 - Ouvrir un terminal <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd>.
 - Chemin absolu du home de *john* : `/home/john/`.
 - `home` est un dossier qui contient tous les dossiers personnels des utilisateurs.
 -  ⬆️ ou ⬇️ pour accéder à l'historique des commandes.
 -  ⬅️ ou ➡️ pour corriger dans la ligne.
 
-## 1.2
+### 1.2
 
-### La commande `ls` - list :
+#### La commande `ls` - list :
 - `ls` : permet d'afficher la liste des dossiers et fichiers du dossier actuel
 
-### La commande `cd` - Change Directory :
+#### La commande `cd` - Change Directory :
 - `cd <nom_dossier>` : permet de se déplacer dans un dossier enfant.
 - `cd ` : permet de se déplacer dans son home, repéré par le ~ (<kbd>AltGr</kbd> + <kbd>2</kbd>).
 - `cd ..` : permet de remonter dans le dossier parent.
 - `cd ../../` : permet de remonter dans le dossier grand-parent.
 
-## 1.3
+### 1.3
 - `cat <addresse_vers_fichier>` permet de lire le contenu d'un fichier.
 - <kbd>Tab</kbd> : autocomplétion du début d'une commande.
 
-## 1.4
+### 1.4
 - `ls <nom_dossier>` : permet d'afficher la liste des dossiers et fichiers du dossier nom_dossier.
 - **chemin relatif** `ls <chemin>` ou `cat <chemin>`: est un chemin qui dépend de l'endroit où l'on est.
 - `ls ..` ou aussi `ls ../<chemin>`: permet de lister le contenu du dossier parent.
 
 - **chemin absolu** `ls /<chemin>`: est un chemin qui ne dépend pas de la où je me trouve.
 
-## 1.5
+### 1.5
 - le premier mot d'une ligne est une **commande** (= un fichier exécutable).
 - les autres mots sont des arguments.
 - `-v` *par exemple* est une option car il y a un tiret (*convention*).
@@ -41,14 +44,14 @@
   * Les commandes accessibles à tous les utilisateurs sont dans le répertoire `/usr/bin/`,
   * Certaines commandes ne sont accessibles qu'aux administrateurs du système. Les commandes d'administration sont dans le répertoire `/sbin/`.
  
- ## 1.6
+ ### 1.6
  - `tree ..` : permet d'afficher l'arborescence du dossier parent.
  - `tree .` : permet d'afficher l'arborescence du dossier courant.
  - `~` : représente le dossier mon home.
  - `cd ~` : emmène directement dans mon home.
   
 ##
-# Cours n°2
+## Cours n°2 - 15/09/2023
 
 - `ls -l` : permet de voir la dernière date de modification d'un fichier
 - `nano <chemin>` : pour éditer un nouveau fichier et ouvre un éditeur de fichier
@@ -64,17 +67,22 @@
 - `du -s <dossier>` : fait la somme de l'espace disque utilisé
 - `du -h <dossier>` : affiche la taille avec une unité plus facile à lire
 
-## 2.7
+#### option :
+- `-a` ou `-- all` : permet de voir tous les fichiers/dossiers (même les fichiers cachés qui sont identifiés par `.<nom_fichier>`)
+- `-l` : permet de donner plus d'informations sur les fichiers/dossiers
+
+### 2.7
 - `ps -o pid` : permet d'afficher les identifiants des processus
   * PID : l'identifiant du processus (Process ID)
   * ARGS : la commande qui a été utilisée pour lancer le processus
   * PPID : l'identifiant du processus parent (Parent Process ID)
   * UID : l'identifiant de l'utilisateur qui a lancé le processus
   * TTY : le terminal correspondant au processus
+- `ps -aux` : permet de lister tout les processus de la machine
+- <kbd>ctrl</kbd>+<kbd>z</kbd> et <kbd>ctrl</kbd>+<kbd>c</kbd> permettent respectivement d'envoyer **SIGSTOP** et **SIGINT** à un processus.
+- `fg` et `bg` permettent respectivement de mettre en avant-plan et en arrière plan un processus préalablement gelé (avec SIGSTOP ou ctrl+z)
+  
+##
+## Cours n°3 - 15/09/2023
 
-
-
-### option :
-- `-a` ou `-- all` : permet de voir tous les fichiers/dossiers (même les fichiers cachés qui sont identifiés par `.<nom_fichier>`)
-- `-l` : permet de donner plus d'informations sur les fichiers/dossiers
-
+### 3.1
