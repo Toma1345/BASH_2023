@@ -50,7 +50,6 @@
 ##
 # Cours n°2
 
-## 2.1
 - `nano <chemin>` : pour éditer un nouveau fichier et ouvre un éditeur de fichier
 - `mkdir <répertoire>` : créer un dossier
 - `mkdir -r <répertoires>` : créer plusieurs dossier grâce à l'option `-r` (`--recursive`)
@@ -65,4 +64,8 @@
 - `du -hm <dossier>` : affiche la taille avec une unité plus facile à lire
 - `ls -l` : permet de voir la dernière date de modification d'un fichier
 
+
+### option :
+- `-a` ou `-- all` : permet de voir tous les fichiers/dossiers (même les fichiers cachés qui sont identifiés par `.<nom_fichier>`)
+- `-l` : permet de donner plus d'informations sur les fichiers/dossiers
 
