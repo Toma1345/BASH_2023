@@ -46,5 +46,3 @@
  - `tree .` : permet d'afficher l'arborescence du dossier courant.
  - `~` : représente le dossier mon home.
  - `cd ~` : emmène directement dans mon home.
- - `cd ~` : emmène directement dans mon home.
-
