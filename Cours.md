@@ -46,3 +46,23 @@
  - `tree .` : permet d'afficher l'arborescence du dossier courant.
  - `~` : représente le dossier mon home.
  - `cd ~` : emmène directement dans mon home.
+  
+##
+# Cours n°2
+
+## 2.1
+- `nano <chemin>` : pour éditer un nouveau fichier et ouvre un éditeur de fichier
+- `mkdir <répertoire>` : créer un dossier
+- `mkdir -r <répertoires>` : créer plusieurs dossier grâce à l'option `-r` (`--recursive`)
+- `mkdir <arguments>` : créer plusieurs sous-dossier rapidement
+- `touch <chemin vers un fichier>` : permet de mettre à jour (l'heure) de dernière modification
+- `touch <chemin vers un fichier inexistant>` : créer un fichier vide
+- `rm <chemin vers un fichier>` : permet de supprimer un **fichier**
+- `rm -r <chemin vers un dossier>` ou `rm --recursive <chemin vers un dossier>` : efface tout les dossiers et fichiers qui sont les enfants du dossier et le dossier
+- ⚠️ `rm -r /` : efface tout l'ordinateur
+- `du <chemin vers un dossier>` : permet de connaître la taille d'un répertoire (`du` : *disk usage*)
+- `du -s <dossier>` : fait la somme de l'espace disque utilisé
+- `du -hm <dossier>` : affiche la taille avec une unité plus facile à lire
+- `ls -l` : permet de voir la dernière date de modification d'un fichier
+
+
