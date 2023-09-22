@@ -133,3 +133,4 @@ La commande `man` correspond à l'aide sur une commande (*help*).
 Dans un fichier *bash* la première ligne : `#!/bin/bash` est composée du chemin vers l'interpréteur bash (`/bin/bash`)
 
 ### 3.7 - Les variables
+Exemple : `prenom="Alice"` ATTENTION : il ne faut pas mettre d'espace entre *prenom*, *=* et *Alice*
