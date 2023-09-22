@@ -17,7 +17,7 @@
 #### La commande `ls` - list :
 - `ls` : permet d'afficher la liste des dossiers et fichiers du dossier actuel
 
-#### La commande `cd` - Change Directory :
+#### La commande `cd` - Change Directory :`
 - `cd <nom_dossier>` : permet de se déplacer dans un dossier enfant.
 - `cd ` : permet de se déplacer dans son home, repéré par le ~ (<kbd>AltGr</kbd> + <kbd>2</kbd>).
 - `cd ..` : permet de remonter dans le dossier parent.
@@ -44,12 +44,11 @@
   * Les commandes accessibles à tous les utilisateurs sont dans le répertoire `/usr/bin/`,
   * Certaines commandes ne sont accessibles qu'aux administrateurs du système. Les commandes d'administration sont dans le répertoire `/sbin/`.
  
- ### 1.6
+ ### 1.6`
  - `tree ..` : permet d'afficher l'arborescence du dossier parent.
- - `tree .` : permet d'afficher l'arborescence du dossier courant.
- - `~` : représente le dossier mon home.
+ - `tree .` : permet d'afficher `mon home.
  - `cd ~` : emmène directement dans mon home.
-  
+  `
 ##
 ## Cours n°2 - 15/09/2023
 
@@ -68,27 +67,23 @@
 - `du -h <dossier>` : affiche la taille avec une unité plus facile à lire
 
 #### option :
-- `-a` ou `-- all` : permet de voir tous les fichiers/dossiers (même les fichiers cachés qui sont identifiés par `.<nom_fichier>`)
+- `-a` ou `-- all` : permet de voir tous les fichiers/dossiers (même les fichiers cachés qui sont ide`ntifiés par `.<nom_fichier>`)
 - `-l` : permet de donner plus d'informations sur les fichiers/dossiers
 
 ### 2.7
-- `ps -o pid` : permet d'afficher les identifiants des processus
-  * PID : l'identifiant du processus (Process ID)
-  * ARGS : la commande qui a été utilisée pour lancer le processus
-  * PPID : l'identifiant du processus parent (Parent Process ID)
-  * UID : l'identifiant de l'utilisateur qui a lancé le processus
+- `ps -o pid` : permet d'affich`
   * TTY : le terminal correspondant au processus
 - `ps -aux` : permet de lister tout les processus de la machine
 - <kbd>ctrl</kbd>+<kbd>z</kbd> et <kbd>ctrl</kbd>+<kbd>c</kbd> permettent respectivement d'envoyer **SIGSTOP** et **SIGINT** à un processus.
 - `fg` et `bg` permettent respectivement de mettre en avant-plan et en arrière plan un processus préalablement gelé (avec SIGSTOP ou ctrl+z)
   
 ##
-## Cours n°3 - 15/09/2023
+## Cours n°3 - 15/09/2023 et 22/09/2023
 
 ### 3.1 - Droits des fichiers
 `ls -l` :
 - `-rw-r----- 1 sasha  etu  495 juil. 16 08:52: fichier1.txt`
-  * `fichier1.txt` : nom du fichier
+  * `fichier1.txt` : nom du fichier`
   * `juil. 16 08:52` : date et heure de la dernière modification du fichier
   * `495` : taille en **octets** du fichier
   * `sasha etu` : le fichier appartient à l'utilisateur *sasha* et est dans le groupe *etu*
@@ -103,7 +98,7 @@
   * `r--` : indique les droits des **membres du groupe** (*ici que le droit de lecture*)
   * les trois derniers `---` indique les droits de tous les **autres utilisateurs**.
 
-  - `cp` : copier un fichier
+  - `cp` : copier un fichier``
   - `grep` : rechercher un mot dans un fichier
  
  ### 3.2 - Modification des droits des fichiers
@@ -118,3 +113,17 @@
     - `-` : pour retirer un droit
     - `rwx` : comme avant pour lire, écrire, exécuter
   on peut mettre par exemple (`og-r`) ou encore (`ug+r, o-x`)
+
+  ### 3.3 - Commande `mv`
+  - `mv <fichiers> <nouvel_endroit>` : permet de déplacer de(s) fichier(s) dans un dossier
+    - le chemin du(des) fichier(s) qu'on veut déplacer
+    - le chemin de l'endroit où on veut le mettre
+  - `mv <fichiers> <nouveau_nom_fichier>` : permet de renommer un fichier
+
+### 3.4 - Commande `man <commande>`
+La commande `man` correspond à l'aide sur une commande (*help*).
+
+### 3.5 - Commande `cp`
+  - `cp <chemin_fichier_à_copier> <chemin_endroit_dela_copie>` : permet de faire une copie du ou des fichier(s) dans un autre dossier
+
+### 3.6 - Introduction aux scripts
