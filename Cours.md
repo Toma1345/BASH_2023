@@ -90,32 +90,31 @@
 - `-rw-r----- 1 sasha  etu  495 juil. 16 08:52: fichier1.txt`
   * `fichier1.txt` : nom du fichier
   * `juil. 16 08:52` : date et heure de la dernière modification du fichier
-  * `495` : taille en octets du fichier
+  * `495` : taille en **octets** du fichier
   * `sasha etu` : le fichier appartient à l'utilisateur *sasha* et est dans le groupe *etu*
   * `1` : nombre de lien qui pointe vers ce fichier
 - `-rw-r-----` : 
   * le premier `-` indique qu'il s'agit d'un **fichier**
+    * `-` quand c'est un fichier ou `d` quand c'est un dossier ou `l` quand c'est un lien
   * `r` (read - **droit de lecture**) : on peut lire le fichier
   * `w` (write - **droit d'écriture**) : on peut modifier le contenu du fichier
   * `x` (execute - **droit d'execution**) : on peut executer le fichier
-  * premier `-` : tiret quand c'est un fichier ou `d` quand c'est un dossier ou `l` quand c'est un lien
   * les autres `-` : absence de droit de **lecture**/**écriture**/**execution** (en fonction de la position du caractère `-`)
   * `r--` : indique les droits des **membres du groupe** (*ici que le droit de lecture*)
   * les trois derniers `---` indique les droits de tous les **autres utilisateurs**.
 
   - `cp` : copier un fichier
   - `grep` : rechercher un mot dans un fichier
+ 
+ ### 3.2 - Modification des droits des fichiers
   - `chmod` : permet de modifier les droits d'un fichier/dossier qui m'appartient (propriétaire et accès)
 
-  `chmod < u g o a><+ | -><rwx> nom_fichier` :
+  `chmod <ugoa><+|-><rwx> nom_fichier` :
     - `u` : pour les droits de l'utilisateur
     - `g` : pour les droits du groupe
     - `o` : pour les droits des autres utilisateurs
     - `a` : pour les droits de tout le monde
-
     - `+` : pour ajouter un droit
     - `-` : pour retirer un droit
-
     - `rwx` : comme avant pour lire, écrire, exécuter
-
   on peut mettre par exemple (`og-r`) ou encore (`ug+r, o-x`)
