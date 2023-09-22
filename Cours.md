@@ -71,7 +71,7 @@
 - `-l` : permet de donner plus d'informations sur les fichiers/dossiers
 
 ### 2.7
-- `ps -o pid` : permet d'affich`
+- `ps -o pid` : permet d'afficher
   * TTY : le terminal correspondant au processus
 - `ps -aux` : permet de lister tout les processus de la machine
 - <kbd>ctrl</kbd>+<kbd>z</kbd> et <kbd>ctrl</kbd>+<kbd>c</kbd> permettent respectivement d'envoyer **SIGSTOP** et **SIGINT** à un processus.
@@ -89,12 +89,12 @@
   * `sasha etu` : le fichier appartient à l'utilisateur *sasha* et est dans le groupe *etu*
   * `1` : nombre de lien qui pointe vers ce fichier
 - `-rw-r-----` : 
-  * le premier `-` indique qu'il s'agit d'un **fichier**
+  * le premier `-` indichemin_endroit_delaque qu'il s'agit d'un **fichier**
     * `-` quand c'est un fichier ou `d` quand c'est un dossier ou `l` quand c'est un lien
   * `r` (read - **droit de lecture**) : on peut lire le fichier
   * `w` (write - **droit d'écriture**) : on peut modifier le contenu du fichier
   * `x` (execute - **droit d'execution**) : on peut executer le fichier
-  * les autres `-` : absence de droit de **lecture**/**écriture**/**execution** (en fonction de la position du caractère `-`)
+  * les autres `-` : absence de droit de **lecture**/**écriture**/**execution** (en fonchemin_endroit_delaction de la position du caractère `-`)
   * `r--` : indique les droits des **membres du groupe** (*ici que le droit de lecture*)
   * les trois derniers `---` indique les droits de tous les **autres utilisateurs**.
 
@@ -127,3 +127,9 @@ La commande `man` correspond à l'aide sur une commande (*help*).
   - `cp <chemin_fichier_à_copier> <chemin_endroit_dela_copie>` : permet de faire une copie du ou des fichier(s) dans un autre dossier
 
 ### 3.6 - Introduction aux scripts
+- Pour exécuter du bash : `bash <nom_fichier>`
+- Pour exécuter du Python3 : `python3 <nom_fichier>`
+
+Dans un fichier *bash* la première ligne : `#!/bin/bash` est composée du chemin vers l'interpréteur bash (`/bin/bash`)
+
+### 3.7 - Les variables
