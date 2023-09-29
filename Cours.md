@@ -170,3 +170,6 @@ D'autres motifs que * existent pour enrichir les possibilités:
 
     echo [br]* qui correspond à tous les mots qui commencent par b ou r.
     echo {ba,re}* qui correspond à tous les mots qui commencent par "ba" ou "re".
+
+ rep -1B -2B -3C
+ rep -1C-D -2A-D -3A
