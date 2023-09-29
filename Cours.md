@@ -104,21 +104,21 @@
 ### 3.2 - Modification des droits des fichiers
   - `chmod` : permet de modifier les droits d'un fichier/dossier qui m'appartient (propriétaire et accès)
 
-  `chmod <ugoa><+|-><rwx> nom_fichier` :
-    - `u` : pour les droits de l'utilisateur
-    - `g` : pour les droits du groupe
-    - `o` : pour les droits des autres utilisateurs
-    - `a` : pour les droits de tout le monde
-    - `+` : pour ajouter un droit
-    - `-` : pour retirer un droit
-    - `rwx` : comme avant pour lire, écrire, exécuter
-  on peut mettre par exemple (`og-r`) ou encore (`ug+r, o-x`)
+  `chmod <ugoa><+|-><rwx> nom_fichier` :  
+    - `u` : pour les droits de l'utilisateur  
+    - `g` : pour les droits du groupe  
+    - `o` : pour les droits des autres utilisateurs  
+    - `a` : pour les droits de tout le monde  
+    - `+` : pour ajouter un droit  
+    - `-` : pour retirer un droit  
+    - `rwx` : comme avant pour lire, écrire, exécuter  
+  on peut mettre par exemple (`og-r`) ou encore (`ug+r, o-x`) 
 
 ### 3.3 - Commande `mv`
   - `mv <fichiers> <nouvel_endroit>` : permet de déplacer de(s) fichier(s) dans un dossier
-    - le chemin du(des) fichier(s) qu'on veut déplacer
+    - le chemin du(des) fichier(s) qu'on veut déplacer <warning> Mettre un `/` à la fin quand il s'agit de déplacer un dossier.
     - le chemin de l'endroit où on veut le mettre
-  - `mv <fichiers> <nouveau_nom_fichier>` : permet de renommer un fichier
+  - `mv <fichiers> <nouveau_nom_fichier>` : permet de renommer un fichier 
 
 ### 3.4 - Commande `man <commande>`
 La commande `man` correspond à l'aide sur une commande (*help*).
@@ -134,3 +134,8 @@ Dans un fichier *bash* la première ligne : `#!/bin/bash` est composée du chemi
 
 ### 3.7 - Les variables
 Exemple : `prenom="Alice"` ATTENTION : il ne faut pas mettre d'espace entre *prenom*, *=* et *Alice*
+
+##
+## Cours n°4 - 29/09/2023 
+
+### 4.1 - Droits des utilisateurs
