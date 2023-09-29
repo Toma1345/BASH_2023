@@ -119,6 +119,7 @@
     - le chemin du(des) fichier(s) qu'on veut déplacer <warning> Mettre un `/` à la fin quand il s'agit de déplacer un dossier.
     - le chemin de l'endroit où on veut le mettre
   - `mv <fichiers> <nouveau_nom_fichier>` : permet de renommer un fichier 
+      * option : `-m` : pour ne pas écraser le fichier existant
 
 ### 3.4 - Commande `man <commande>`
 La commande `man` correspond à l'aide sur une commande (*help*).
@@ -127,7 +128,8 @@ La commande `man` correspond à l'aide sur une commande (*help*).
   - `cp <chemin_fichier_à_copier> <chemin_endroit_dela_copie>` : permet de faire une copie du ou des fichier(s) dans un autre dossier
 
 ### 3.6 - Introduction aux scripts
-- Pour exécuter du bash : `bash <nom_fichier>`
+(penser à avoir ajouter les droits d'exécution `chmod`)
+- Pour exécuter du bash : `bash <nom_fichier>` 
 - Pour exécuter du Python3 : `python3 <nom_fichier>`
 
 Dans un fichier *bash* la première ligne : `#!/bin/bash` est composée du chemin vers l'interpréteur bash (`/bin/bash`)
@@ -139,3 +141,16 @@ Exemple : `prenom="Alice"` ATTENTION : il ne faut pas mettre d'espace entre *pre
 ## Cours n°4 - 29/09/2023 
 
 ### 4.1 - Droits des utilisateurs
+- commande `sudo` pour exécuter une commande en tant que **root**
+
+### 4.2 - Redirection des sorties vers un fichier
+Par exemple : `ls -l > essai.txt` la sorti a été redirigé vers le fichier essai.txt et on peut donc l'afficher en faisant : `cat essai.txt`
+on peut mettre plusieurs arguments puis `>`.
+- Mettre `>>` pour redirigé dans le fichier sans écrasé ce qui est déjà dessus.
+- Mettre `2>` pour redirigé dans un fichier **seulement la sortie d'erreur** et affiche la sortie standard (s'il y en a une).  
+- Mettre `commande arg1 arg2 arg3 2> sortie_erreur.log > sortie_standard` : pour redirigé dans un fichier la sortie d'erreur et dans un autre fichier la sortie standard.  
+- Mettre `2> /dev/null ` : pour envoyer dans le **trou noir** la sortie d'erreur.  
+2> /dev/null 
+### 4.3 - Script et arguments
+Mettre des "" ou '' pour faire un seul arguments qui peut donc comporter des espaces ou remplacer les espaces par \
+
