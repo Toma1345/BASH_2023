@@ -101,7 +101,7 @@
   - `cp` : copier un fichier``
   - `grep` : rechercher un mot dans un fichier
  
- ### 3.2 - Modification des droits des fichiers
+### 3.2 - Modification des droits des fichiers
   - `chmod` : permet de modifier les droits d'un fichier/dossier qui m'appartient (propriétaire et accès)
 
   `chmod <ugoa><+|-><rwx> nom_fichier` :
@@ -114,7 +114,7 @@
     - `rwx` : comme avant pour lire, écrire, exécuter
   on peut mettre par exemple (`og-r`) ou encore (`ug+r, o-x`)
 
-  ### 3.3 - Commande `mv`
+### 3.3 - Commande `mv`
   - `mv <fichiers> <nouvel_endroit>` : permet de déplacer de(s) fichier(s) dans un dossier
     - le chemin du(des) fichier(s) qu'on veut déplacer
     - le chemin de l'endroit où on veut le mettre
