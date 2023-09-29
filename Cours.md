@@ -129,10 +129,10 @@ La commande `man` correspond à l'aide sur une commande (*help*).
 
 ### 3.6 - Introduction aux scripts
 (penser à avoir ajouter les droits d'exécution `chmod`)
-- Pour exécuter du bash : `bash <nom_fichier>` 
+- Pour exécuter du bash : `bash <nom_fichier>` == recommandé : **`./<nom_fichier>`**
 - Pour exécuter du Python3 : `python3 <nom_fichier>`
-
-Dans un fichier *bash* la première ligne : `#!/bin/bash` est composée du chemin vers l'interpréteur bash (`/bin/bash`)
+Pour savoir où se trouve par exemple bash : `which bash`
+Dans un fichier *bash* la première ligne doit toujours être : `#!/bin/bash` est composée du chemin vers l'interpréteur bash (`/bin/bash`)
 
 ### 3.7 - Les variables
 Exemple : `prenom="Alice"` ATTENTION : il ne faut pas mettre d'espace entre *prenom*, *=* et *Alice*
@@ -151,6 +151,17 @@ on peut mettre plusieurs arguments puis `>`.
 - Mettre `commande arg1 arg2 arg3 2> sortie_erreur.log > sortie_standard` : pour redirigé dans un fichier la sortie d'erreur et dans un autre fichier la sortie standard.  
 - Mettre `2> /dev/null ` : pour envoyer dans le **trou noir** la sortie d'erreur.  
 2> /dev/null 
-### 4.3 - Script et arguments
-Mettre des "" ou '' pour faire un seul arguments qui peut donc comporter des espaces ou remplacer les espaces par \
 
+### 4.3 - Script et arguments
+Mettre des "" ou '' pour faire un seul arguments qui peut donc comporter des espaces ou remplacer les espaces par `\`.
+Pour faire une opération utiliser `expr "<arg>" "<+ * />" "<arg>"`.
+
+### 4.4 - Installation de programmes
+Pour installer un programme utiliser `apt`
+
+Les paquets sont récupérés dans des dépôts. Initialement, lorsque tu as installé ton système, des dépôts "officiels" d'ubuntu sont configurés : ce sont des sites web les logiciels standards testés par ubuntu. Ils sont présents dans le fichier /etc/apt/sources.list .
+- Pour installer un paquet : `sudo apt install <paquet>`.
+- Pour désinstaller un paquet : `sudo apt purge <paquet>`.
+- La première chose à faire est de mettre à jour localement (dans ton système) la liste des logiciels installables, ce qui revient à mettre à jour la liste des paquets. Pour cela, utilise par exemple la commande sudo apt update.
+
+### 4.5 - Les jokers
