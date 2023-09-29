@@ -165,3 +165,8 @@ Les paquets sont récupérés dans des dépôts. Initialement, lorsque tu as ins
 - La première chose à faire est de mettre à jour localement (dans ton système) la liste des logiciels installables, ce qui revient à mettre à jour la liste des paquets. Pour cela, utilise par exemple la commande sudo apt update.
 
 ### 4.5 - Les jokers
+`echo b*` : affiche tout les fichiers qui commencent par un b...
+D'autres motifs que * existent pour enrichir les possibilités:
+
+    echo [br]* qui correspond à tous les mots qui commencent par b ou r.
+    echo {ba,re}* qui correspond à tous les mots qui commencent par "ba" ou "re".
