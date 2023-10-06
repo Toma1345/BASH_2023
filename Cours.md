@@ -169,6 +169,10 @@ Les paquets sont récupérés dans des dépôts. Initialement, lorsque tu as ins
 D'autres motifs que * existent pour enrichir les possibilités, tel que :
   - `echo [br]*` qui correspond à tous les mots qui commencent par b ou r.
   - `echo {ba,re}*` qui correspond à tous les mots qui commencent par "ba" ou "re".
+  - `<commande *{lettres1, lettres2}>` qui correspond à tous les mots qui terminent par "lettre1" ou "lettre2"
+On peut garder un caractère en l'encadrant avec : `""`, `''` ou `\<caractère>`.
 
- rep -1B -2B -3C
- rep -1C-D -2A-D -3A
+##
+## Cours n°5 - 06/10/2023 
+
+### 5.1 - Droits - Episode n°2 : Droits des dossiers
