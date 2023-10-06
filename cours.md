@@ -165,7 +165,7 @@ Les paquets sont récupérés dans des dépôts. Initialement, lorsque tu as ins
 - Pour installer un paquet : `sudo apt install <paquet>`.
 - Pour désinstaller un paquet : `sudo apt purge <paquet>`.
 - Pour mettre à jour la liste des paquets : `sudo apt update`.  
-- Pour mettre à jour tout les paquets : `sudo apt upgrade`.
+- Pour mettre à jour **tout** les paquets : `sudo apt upgrade`.
 - La première chose à faire est de mettre à jour localement (dans ton système) la liste des logiciels installables, ce qui revient à mettre à jour la liste des paquets. Pour cela, utilise par exemple la commande sudo apt update.
 
 ### 4.5 - Les jokers
