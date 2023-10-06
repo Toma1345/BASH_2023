@@ -164,6 +164,8 @@ Pour installer un programme utiliser `apt`
 Les paquets sont récupérés dans des dépôts. Initialement, lorsque tu as installé ton système, des dépôts "officiels" d'ubuntu sont configurés : ce sont des sites web les logiciels standards testés par ubuntu. Ils sont présents dans le fichier /etc/apt/sources.list .
 - Pour installer un paquet : `sudo apt install <paquet>`.
 - Pour désinstaller un paquet : `sudo apt purge <paquet>`.
+- Pour mettre à jour la liste des paquets : `sudo apt update`.  
+- Pour mettre à jour tout les paquets : `sudo apt upgrade`.
 - La première chose à faire est de mettre à jour localement (dans ton système) la liste des logiciels installables, ce qui revient à mettre à jour la liste des paquets. Pour cela, utilise par exemple la commande sudo apt update.
 
 ### 4.5 - Les jokers
@@ -189,3 +191,10 @@ Les **blocs de données** contiennent les données des fichiers (ce qu'on va voi
 Les **inodes** contiennent les méta-données : permissions, taille du fichier, date de dernière modification, etc. ainsi que l'indication de l'endroit où se trouvent les données associées comme le montre le zoom sur l'image suivante :  
 
 ![Alt text](image.png)  
+
+➟ Pour connaître le numéro d'inode des fichiers: `ls -i`.
+- Dans les données d'un dossier il y a :
+    - le **nom** des fichiers,
+    - les **numéros** d'inodes de ces fichiers.
+- les répertoires sont des associations nom -> numéro d'inode.
+- commande `ln <fichier1> <fichier2>` : créer un lien physique (si on change quelque chose dans le fichier1, ça le change aussi dans le fichier2 - Par contre si on supprime le fichier1, ça ne supprime pas le fichier2).  
