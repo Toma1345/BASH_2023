@@ -176,3 +176,9 @@ On peut garder un caractère en l'encadrant avec : `""`, `''` ou `\<caractère>`
 ## Cours n°5 - 06/10/2023 
 
 ### 5.1 - Droits - Episode n°2 : Droits des dossiers
+Par exemple : `drwxrwxr-x 2 sasha etu 4096 juil. 16 13:31 Documents` : le premier `d` signifie que "**Documents**" est un dossier.  
+Si a la place de `d` il y a un `-` cela signifie que c'est un fichier.  
+*Avoir les droits d'exécution d'un dossier signifie que l'on y a accès, que l'on peut l'ouvrir et le traverser mais pas forcement regarder son contenu !*  
+- Pour lister le contenu d'un dossier (`ls`) ou effectuer des recherches dans le dossier (`find`), il faut **avoir** les droits de **lecture**.  
+
+### 5.2 - Droits - Episode n°4 : 
