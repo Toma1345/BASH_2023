@@ -46,7 +46,7 @@
  
  ### 1.6`
  - `tree ..` : permet d'afficher l'arborescence du dossier parent.
- - `tree .` : permet d'afficher `mon home.
+ - `tree .` : permet d'afficher mon home.
  - `cd ~` : emmène directement dans mon home.
   `
 ##
@@ -67,7 +67,7 @@
 - `du -h <dossier>` : affiche la taille avec une unité plus facile à lire
 
 #### option :
-- `-a` ou `-- all` : permet de voir tous les fichiers/dossiers (même les fichiers cachés qui sont ide`ntifiés par `.<nom_fichier>`)
+- `-a` ou `-- all` : permet de voir tous les fichiers/dossiers (même les fichiers cachés qui sont identifiés par `.<nom_fichier>`)
 - `-l` : permet de donner plus d'informations sur les fichiers/dossiers
 
 ### 2.7
@@ -154,7 +154,9 @@ on peut mettre plusieurs arguments puis `>`.
 
 ### 4.3 - Script et arguments
 Mettre des "" ou '' pour faire un seul arguments qui peut donc comporter des espaces ou remplacer les espaces par `\`.
-Pour faire une opération utiliser `expr "<arg>" "<+ * />" "<arg>"`.
+Pour faire une opération utiliser `expr "<arg>" "<+ * />" "<arg>"` ou `$(<args>)`.  
+`$1` : premier argument
+`$#` : nombres d'arguments
 
 ### 4.4 - Installation de programmes
 Pour installer un programme utiliser `apt`
