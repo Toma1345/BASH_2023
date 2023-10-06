@@ -183,4 +183,9 @@ Si a la place de `d` il y a un `-` cela signifie que c'est un fichier.
 *Avoir les droits d'exécution d'un dossier signifie que l'on y a accès, que l'on peut l'ouvrir et le traverser mais pas forcement regarder son contenu !*  
 - Pour lister le contenu d'un dossier (`ls`) ou effectuer des recherches dans le dossier (`find`), il faut **avoir** les droits de **lecture**.  
 
-### 5.2 - Droits - Episode n°4 : 
+### 5.2 - Droits - Episode n°4 : Les inodes
+Le **système d'un fichier** : c'est une façon de stocker les informations et de les organiser dans un espace disque.  
+Les **blocs de données** contiennent les données des fichiers (ce qu'on va voir en regardant le contenu hexadécimal d'un fichier).  
+Les **inodes** contiennent les méta-données : permissions, taille du fichier, date de dernière modification, etc. ainsi que l'indication de l'endroit où se trouvent les données associées comme le montre le zoom sur l'image suivante :  
+
+![Alt text](image.png)  
