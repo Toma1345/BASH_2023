@@ -174,7 +174,7 @@ D'autres motifs que * existent pour enrichir les possibilités, tel que :
   - `echo [br]*` qui correspond à tous les mots qui commencent par b ou r.
   - `echo {ba,re}*` qui correspond à tous les mots qui commencent par "ba" ou "re".
   - `<commande *{lettres1, lettres2}>` qui correspond à tous les mots qui terminent par "lettre1" ou "lettre2"
-On peut garder un caractère en l'encadrant avec : `""`, `''` ou `\<caractère>`.
+On peut garder un caractère cpechogrepmvrmen l'encadrant avec : `""`, `''` ou `\<caractère>`.
 
 ##
 ## Cours n°5 - 06/10/2023 
@@ -186,7 +186,7 @@ Si a la place de `d` il y a un `-` cela signifie que c'est un fichier.
 - Pour lister le contenu d'un dossier (`ls`) ou effectuer des recherches dans le dossier (`find`), il faut **avoir** les droits de **lecture**.  
 
 ### 5.2 - Droits - Episode n°4 : Les inodes
-Le **système d'un fichier** : c'est une façon de stocker les informations et de les organiser dans un espace disque.  
+Le **système d'un fichier** : c'est un<e façon de stocker les informations et de les organiser dans un espace disque.  
 Les **blocs de données** contiennent les données des fichiers (ce qu'on va voir en regardant le contenu hexadécimal d'un fichier).  
 Les **inodes** contiennent les méta-données : permissions, taille du fichier, date de dernière modification, etc. ainsi que l'indication de l'endroit où se trouvent les données associées comme le montre le zoom sur l'image suivante :  
 
@@ -206,15 +206,35 @@ Les **inodes** contiennent les méta-données : permissions, taille du fichier, 
 ## Cours n°5 - 13/10/2023 
 
 ### 6.1 - Focus sur la commande `cut`
+- `grep` est une commande qui affiche sur sa sortie standard toutes les lignes du fichier passé en deuxième argument contenant la chaine passée en premier argument
+- La commande `cut -f <colonne(,s)` : permet de se concentrer sur une seul colonne d'un fichier csv
 
 ### 6.2 - Le statut de sortie
-- Le statut de sortie de la commande ls est 0 lorsque "tout se passe" bien, et 2 lorsque le répertoire passé en argument n'existe pas.
+- Le **statut de sortie** de la commande est 0 lorsque "tout se passe" bien, et 2 lorsque le répertoire passé en argument n'existe pas.
+- La commande `test` permet de comparer des chaines de caractère ou des entiers, mais aussi de tester l'existence de fichiers.
+L'option `-ge` ou `-eq` signifie greater or equal et  l'option `-e` signifie exists.
+
 ### 6.3 - Redirection de l'entrée standard à partir d'un fichier
+- La commande `wc` permet d'afficher le nombre de lignes, mots et octets de chaque fichier passé en argument
+- On redirige l'entrée standard à partir d'un fichier avec le caractère `<`.
+- Les commandes `rm`, `echo`, `mv`, `ls`, `cp`,  ne sait pas lire les entrées à partir d'un fichier.
+- La commande `tr <args1 args2>` transforme les éléments passé dans son entrée standard qui correspondent à args1 en args2.
 
 ### 6.4 - Les conditions en bash
+```bash
+if test -e /home/
+then
+ echo "Le dossier /home/ existe !"
+else
+ echo "Le dossier /home/ n'existe pas !"
+fi
+```
+*Voici ce qui se passe* : La commande `if` exécute ce qui est écrit juste après (ici la commande `test`), puis teste le statut de sortie. Si ce statut de sortie est `0` il exécute ensuite ce qui est dans le `then`, sinon il exécute ce qui est dans le `else`.
+- La commande `test <testing>` peut être écrite : `[ <testing> ]`. <warning>Les espaces sont très importants !</warning>
 
 ##
 ### 7.1 - Pipelines
+
 
 ### 7.2 -
 
