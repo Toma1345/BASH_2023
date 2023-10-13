@@ -157,6 +157,14 @@ Mettre des "" ou '' pour faire un seul arguments qui peut donc comporter des esp
 Pour faire une opération utiliser `expr "<arg>" "<+ * />" "<arg>"` ou `$(<args>)`.  
 `$1` : premier argument
 `$#` : nombres d'arguments
+`read` : lire et stocker ce qui est mit en entrée standard
+script qui lit ce qui est mit en entrée standard et le renvoie :
+```bash
+#!/bin/bash
+read phrase
+echo phrase
+```
+
 
 ### 4.4 - Installation de programmes
 Pour installer un programme utiliser `apt`
@@ -203,7 +211,7 @@ Les **inodes** contiennent les méta-données : permissions, taille du fichier, 
 
 
 ##
-## Cours n°5 - 13/10/2023 
+## Cours n°6 - 13/10/2023 
 
 ### 6.1 - Focus sur la commande `cut`
 - `grep` est une commande qui affiche sur sa sortie standard toutes les lignes du fichier passé en deuxième argument contenant la chaine passée en premier argument
@@ -218,7 +226,8 @@ L'option `-ge` ou `-eq` signifie greater or equal et  l'option `-e` signifie exi
 - La commande `wc` permet d'afficher le nombre de lignes, mots et octets de chaque fichier passé en argument
 - On redirige l'entrée standard à partir d'un fichier avec le caractère `<`.
 - Les commandes `rm`, `echo`, `mv`, `ls`, `cp`,  ne sait pas lire les entrées à partir d'un fichier.
-- La commande `tr <args1 args2>` transforme les éléments passé dans son entrée standard qui correspondent à args1 en args2.
+- La commande `tr args1 args2 < mot` transforme les éléments de mot qui correspondent à args1 en args2.
+- `tr` : mot en miniscule en majuscule : `tr [lower:] [:upper] < mot`
 
 ### 6.4 - Les conditions en bash
 ```bash
@@ -233,11 +242,52 @@ fi
 - La commande `test <testing>` peut être écrite : `[ <testing> ]`. <warning>Les espaces sont très importants !</warning>
 
 ##
+## Cours n°7 - 13/10/2023 
+
 ### 7.1 - Pipelines
+```bash
+#!/bin/bash
+ls $1 > fichier
+wc -l < fichier
+```
+- Compte le nombre de dossier/fichier dans le répertoire `$1` passé en argument (ici pas de pipeline).
+- Il est possible de connecter directement la sortie standard d'une commande à l'entrée standard d'une autre commande. Cela se fait à l'aide de pipeline `|` (<kbd>AltGr</kbd>+<kbd>6</kbd>).
+- La commande `head -X FILE` permet d'afficher les X premières lignes d'un fichier FILE
+- La commande `tail -X FILE` permet d'afficher les X dernières lignes d'un fichier FILE
+- La commande `head -X FILE | tail -Y` permet d'afficher les Y dernières lignes des X premières lignes d'un fichier FILE
 
+### 7.2 - Introduction aux expressions régulières
+Les caractères : `^` correspond au début de ligne et `$` à la fin de ligne.
+La construction suivante permet de spécifier une correspondance pour un motif ou un autre : `grep -E "on|ou" FILE`
 
-### 7.2 -
+##
+## Cours n°8 - 13/10/2023 
 
+### 8.1 - Scripts et boucle `for`
+```bash
+#!/bin/bash
+
+for variable in 'valeur1' 'valeur2' 'valeur3'
+do
+        echo "Coucou"
+        echo "chers étudiants"
+done
+```
+Afin de manipuler la sortie d'une commande en tant que chaîne de caractères, il faut utiliser la syntaxe dite *backquoting*. Cela consistera à entourer la commande par `$(...)`.
+
+### 8.2 - Bash et Python
+Exemples : 
+```bash
+#!/usr/bin/python3
+# Auteur :  A. B.
+# Ce script dit bonjour
+print("Bonjour")
+```
+
+##
+#### Informations :
+
+>Evaluation le 20 octobre 2023 sur papier de 15h30 à 17h00.**
 
 ### Important :
 - Droits et dossier (5.1)
