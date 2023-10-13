@@ -196,5 +196,36 @@ Les **inodes** contiennent les méta-données : permissions, taille du fichier, 
 - Dans les données d'un dossier il y a :
     - le **nom** des fichiers,
     - les **numéros** d'inodes de ces fichiers.
-- les répertoires sont des associations nom -> numéro d'inode.
+- les répertoires sont des associations nom -> numéro d'inode.: pour redirigé dans un fichier la sortie d'erreur et dans un autre fichier la sortie standard.  
+- Mettre `2> /dev/null ` : pour envoyer dans le **trou noir** la sortie d'erreur.  
+2> /dev/null 
 - commande `ln <fichier1> <fichier2>` : créer un lien physique (si on change quelque chose dans le fichier1, ça le change aussi dans le fichier2 - Par contre si on supprime le fichier1, ça ne supprime pas le fichier2).  
+
+
+##
+## Cours n°5 - 13/10/2023 
+
+### 6.1 - Focus sur la commande `cut`
+
+### 6.2 - Le statut de sortie
+- Le statut de sortie de la commande ls est 0 lorsque "tout se passe" bien, et 2 lorsque le répertoire passé en argument n'existe pas.
+### 6.3 - Redirection de l'entrée standard à partir d'un fichier
+
+### 6.4 - Les conditions en bash
+
+##
+### 7.1 - Pipelines
+
+### 7.2 -
+
+
+### Important :
+- Droits et dossier (5.1)
+- Redirection de l'entrée standard à partir d'un fichier (6.3)
+- Les conditions en bash (6.4)
+- Pipelines (7.1)
+
+### Moins important
+- Inodes (5.2)
+- Le statut de sortie (6.2)
+- Boucle for (8.1) - Pour les TPs
